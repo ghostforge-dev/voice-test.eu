@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Logs
+*.log
+opencode-log.txt
+
+# Lokale Secrets (sollten nie ins Repo)
+.env
+*.env
+secrets/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Build artifacts
+node_modules/
+dist/
+.tmp/
