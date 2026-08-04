@@ -662,7 +662,8 @@
       "framework": "piper",
       "last_checked": "2026-08-04T22:39:42+0000",
       "status": "active",
-      "samples_generated": false
+      "samples_generated": true,
+      "sample_count": 0
     },
     {
       "id": "owensong/Inflect-Nano-v2",
@@ -944,7 +945,8 @@
       "framework": "piper",
       "last_checked": "2026-08-04T22:39:42+0000",
       "status": "active",
-      "samples_generated": false
+      "samples_generated": true,
+      "sample_count": 0
     },
     {
       "id": "ResembleAI/chatterbox",
