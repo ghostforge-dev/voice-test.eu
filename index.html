@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ghostforge voice-test.eu · Open Source TTS-Vergleich</title>
+<meta name="description" content="Vergleiche synthetische Stimmen aller groesserer TTS-Anbieter und Open-Source-Modelle in 25 europaeischen Sprachen.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28'%3E%F0%9F%91%BB%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --bg-card: #14141c;
+    --bg-card-hover: #1c1c2a;
+    --border: #2a2a3a;
+    --accent: #7c3aed;
+    --accent-hover: #6d28d9;
+    --accent-text: #c4b5fd;
+    --text: #e4e4e7;
+    --text-muted: #a1a1aa;
+    --text-faint: #71717a;
+    --green: #10b981;
+    --yellow: #f59e0b;
+    --red: #ef4444;
+    --shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+  a { color: var(--accent-text); text-decoration: none; }
+  a:hover { color: var(--accent); text-decoration: underline; }
+
+  /* Header */
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 1.5rem 2rem;
+    background: linear-gradient(180deg, #14141c 0%, var(--bg) 100%);
+  }
+  header .container {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap;
+  }
+  header h1 {
+    font-size: 1.4rem; font-weight: 600; letter-spacing: -0.02em;
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  header h1 .ghost { font-size: 1.8rem; }
+  header .tagline {
+    color: var(--text-muted); font-size: 0.9rem;
+  }
+  header nav { display: flex; gap: 1rem; }
+  header nav a { font-size: 0.9rem; }
+
+  /* Filters */
+  .filters {
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 2rem;
+    position: sticky; top: 0; z-index: 10;
+  }
+  .filters .container {
+    max-width: 1200px; margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.75rem;
+  }
+  .filters label {
+    display: block; font-size: 0.7rem; color: var(--text-faint);
+    text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;
+  }
+  .filters select, .filters input[type="text"] {
+    width: 100%; padding: 0.5rem 0.75rem;
+    background: var(--bg); color: var(--text);
+    border: 1px solid var(--border); border-radius: 6px;
+    font-size: 0.9rem; cursor: pointer;
+  }
+  .filters select:focus, .filters input[type="text"]:focus {
+    outline: none; border-color: var(--accent);
+  }
+  .search-bar { grid-column: span 2; }
+
+  /* Variant selector */
+  .variant-bar {
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border);
+    padding: 0.75rem 2rem;
+  }
+  .variant-bar .container {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;
+  }
+  .variant-bar .variant-btn {
+    background: transparent; border: 1px solid var(--border);
+    color: var(--text-muted); padding: 0.4rem 0.9rem;
+    border-radius: 999px; cursor: pointer; font-size: 0.85rem;
+    transition: all 0.15s;
+  }
+  .variant-bar .variant-btn:hover {
+    background: var(--bg-card-hover); color: var(--text);
+  }
+  .variant-bar .variant-btn.active {
+    background: var(--accent); color: white; border-color: var(--accent);
+  }
+  .variant-bar .text-preview {
+    flex: 1; min-width: 200px;
+    color: var(--text-muted); font-size: 0.85rem; font-style: italic;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .variant-bar .result-count {
+    color: var(--text-faint); font-size: 0.85rem;
+  }
+
+  /* A/B compare bar */
+  .compare-bar {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    background: var(--bg-card);
+    border-top: 1px solid var(--accent);
+    padding: 0.75rem 2rem;
+    transform: translateY(100%);
+    transition: transform 0.2s;
+    z-index: 20;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.5);
+  }
+  .compare-bar.visible { transform: translateY(0); }
+  .compare-bar .container {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+  }
+  .compare-slot {
+    flex: 1; min-width: 180px;
+    background: var(--bg); padding: 0.5rem 0.75rem;
+    border-radius: 6px; border: 1px solid var(--border);
+    font-size: 0.85rem;
+  }
+  .compare-slot .label { color: var(--text-faint); font-size: 0.7rem; text-transform: uppercase; }
+  .compare-slot .name { color: var(--text); }
+  .compare-slot.empty .name { color: var(--text-faint); font-style: italic; }
+  .compare-bar audio { width: 200px; height: 32px; }
+  .compare-bar button {
+    background: var(--bg); border: 1px solid var(--border);
+    color: var(--text-muted); padding: 0.4rem 0.8rem;
+    border-radius: 6px; cursor: pointer; font-size: 0.85rem;
+  }
+  .compare-bar button:hover { background: var(--bg-card-hover); }
+  .compare-bar button.play-both { background: var(--accent); color: white; border-color: var(--accent); }
+  .compare-bar button.play-both:hover { background: var(--accent-hover); }
+
+  /* Sample list */
+  main { padding: 1rem 2rem 8rem; }
+  main .container { max-width: 1200px; margin: 0 auto; }
+  .sample-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.85rem 1rem;
+    margin-bottom: 0.5rem;
+    display: grid;
+    grid-template-columns: 32px 1fr auto auto;
+    gap: 0.75rem; align-items: center;
+    transition: all 0.1s;
+  }
+  .sample-card:hover { background: var(--bg-card-hover); border-color: var(--accent); }
+  .sample-card.playing { border-color: var(--green); box-shadow: 0 0 0 2px rgba(16,185,129,0.2); }
+  .sample-card.compare-a { border-color: var(--yellow); }
+  .sample-card.compare-b { border-color: var(--accent); }
+
+  .sample-card .play-btn {
+    width: 32px; height: 32px; border-radius: 50%;
+    background: var(--accent); color: white; border: none;
+    cursor: pointer; font-size: 14px;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.1s;
+  }
+  .sample-card .play-btn:hover { background: var(--accent-hover); }
+  .sample-card.playing .play-btn { background: var(--green); }
+
+  .sample-card .info { min-width: 0; }
+  .sample-card .info .row1 {
+    display: flex; gap: 0.5rem; align-items: baseline;
+    font-size: 0.95rem;
+  }
+  .sample-card .info .voice-name { font-weight: 500; }
+  .sample-card .info .voice-id {
+    color: var(--text-faint); font-family: monospace; font-size: 0.8rem;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .sample-card .info .row2 {
+    color: var(--text-muted); font-size: 0.8rem;
+    display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 2px;
+  }
+  .sample-card .info .row2 .tag {
+    background: var(--bg); padding: 1px 6px;
+    border-radius: 4px; font-size: 0.7rem;
+  }
+  .sample-card .info .row2 .provider-link {
+    color: var(--text-faint); text-decoration: underline; text-underline-offset: 2px;
+  }
+  .sample-card .info .row2 .provider-link:hover { color: var(--accent-text); }
+  .sample-card .actions { display: flex; gap: 0.4rem; }
+  .sample-card .actions button {
+    background: var(--bg); color: var(--text-muted);
+    border: 1px solid var(--border); padding: 0.3rem 0.6rem;
+    border-radius: 5px; font-size: 0.75rem; cursor: pointer;
+    transition: all 0.1s;
+  }
+  .sample-card .actions button:hover { background: var(--bg-card-hover); color: var(--text); }
+  .sample-card .actions button.active-a { background: var(--yellow); color: black; border-color: var(--yellow); }
+  .sample-card .actions button.active-b { background: var(--accent); color: white; border-color: var(--accent); }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 2rem; text-align: center;
+    color: var(--text-muted); font-size: 0.85rem;
+    background: var(--bg-card);
+  }
+  footer .container { max-width: 1200px; margin: 0 auto; }
+  footer a { margin: 0 0.5rem; }
+  footer .donate {
+    margin-top: 1rem; display: inline-block;
+    background: var(--accent); color: white;
+    padding: 0.5rem 1rem; border-radius: 6px;
+    text-decoration: none;
+  }
+  footer .donate:hover { background: var(--accent-hover); color: white; }
+
+  /* Loading + Empty states */
+  .state {
+    text-align: center; padding: 4rem 2rem;
+    color: var(--text-muted);
+  }
+  .state .spinner {
+    display: inline-block; width: 32px; height: 32px;
+    border: 3px solid var(--border); border-top-color: var(--accent);
+    border-radius: 50%; animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  @media (max-width: 600px) {
+    header, .filters, .variant-bar, main, footer { padding-left: 1rem; padding-right: 1rem; }
+    .sample-card { grid-template-columns: 32px 1fr; }
+    .sample-card .actions { grid-column: 1 / -1; justify-content: flex-end; }
+    .compare-bar audio { width: 100%; }
+    .compare-bar .container { gap: 0.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div>
+      <h1><span class="ghost">👻</span> Ghostforge voice-test.eu</h1>
+      <div class="tagline">Open Source TTS-Vergleich · <span id="total-count">lade…</span> Stimmen in 25 Sprachen</div>
+    </div>
+    <nav>
+      <a href="https://github.com/ghostforge-dev/voice-test.eu" target="_blank">GitHub</a>
+      <a href="/data/samples.json" target="_blank">Daten</a>
+      <a href="/METHODOLOGY.md" target="_blank">Methodik</a>
+    </nav>
+  </div>
+</header>
+
+<section class="filters">
+  <div class="container">
+    <div class="search-bar">
+      <label for="search">Suche (Voice-Name)</label>
+      <input type="text" id="search" placeholder="z.B. Vicki, alloy, thorsten…">
+    </div>
+    <div>
+      <label for="f-lang">Sprache</label>
+      <select id="f-lang"><option value="">Alle</option></select>
+    </div>
+    <div>
+      <label for="f-provider">Provider</label>
+      <select id="f-provider"><option value="">Alle</option></select>
+    </div>
+    <div>
+      <label for="f-gender">Geschlecht</label>
+      <select id="f-gender">
+        <option value="">Alle</option>
+        <option value="female">Weiblich</option>
+        <option value="male">Männlich</option>
+        <option value="neutral">Neutral</option>
+        <option value="unknown">Unbekannt</option>
+      </select>
+    </div>
+    <div>
+      <label for="f-license">Lizenz</label>
+      <select id="f-license">
+        <option value="">Alle</option>
+        <option value="oss">Open Source</option>
+        <option value="proprietary">Proprietär</option>
+      </select>
+    </div>
+    <div>
+      <label for="f-sort">Sortierung</label>
+      <select id="f-sort">
+        <option value="provider">Provider</option>
+        <option value="voice">Voice-Name</option>
+        <option value="language">Sprache</option>
+        <option value="random">Zufällig</option>
+      </select>
+    </div>
+  </div>
+</section>
+
+<section class="variant-bar">
+  <div class="container">
+    <button class="variant-btn active" data-variant="v1_simple">Einfach</button>
+    <button class="variant-btn" data-variant="v2_medium">Mittel</button>
+    <button class="variant-btn" data-variant="v3_emotional">Emotional</button>
+    <div class="text-preview" id="text-preview"></div>
+    <div class="result-count" id="result-count"></div>
+  </div>
+</section>
+
+<section class="compare-bar" id="compare-bar">
+  <div class="container">
+    <div class="compare-slot empty" id="slot-a">
+      <div class="label">Stimme A</div>
+      <div class="name">Klicke [A] bei einer Stimme</div>
+    </div>
+    <audio id="audio-a" controls preload="none"></audio>
+    <div class="compare-slot empty" id="slot-b">
+      <div class="label">Stimme B</div>
+      <div class="name">Klicke [B] bei einer Stimme</div>
+    </div>
+    <audio id="audio-b" controls preload="none"></audio>
+    <button id="play-both" class="play-both">▶ Beide nacheinander</button>
+    <button id="close-compare">✕ Schließen</button>
+  </div>
+</section>
+
+<main>
+  <div class="container">
+    <div class="state" id="loading">
+      <div class="spinner"></div>
+      <div>Lade Samples…</div>
+    </div>
+    <div id="samples-list"></div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div>
+      <a href="https://github.com/ghostforge-dev/voice-test.eu">GitHub</a>·
+      <a href="/METHODOLOGY.md">Methodik</a>·
+      <a href="/data/models.json">models.json</a>·
+      <a href="/data/samples.json">samples.json</a>·
+      <a href="/LICENSE">MIT-Lizenz</a>
+    </div>
+    <div style="margin-top: 0.5rem;">
+      Ghostforge · Geisterschmiede · Samples: <a href="/LICENSE">CC BY 4.0</a> · Code: MIT
+    </div>
+    <a href="https://github.com/sponsors/ghostforge-dev" class="donate" target="_blank">💬 Gefunden nützlich? Unterstütze das Projekt</a>
+  </div>
+</footer>
+
+<script src="/app.js"></script>
+</body>
+</html>
