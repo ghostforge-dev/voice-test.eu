@@ -1,0 +1,32 @@
+name: Model Check
+on:
+  schedule:
+    - cron: '0 3 * * 1'  # Jeden Montag 03:00 UTC
+  workflow_dispatch:       # Manuell triggerbar
+
+permissions:
+  contents: write          # git push fuer models.json update
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install deps
+        run: pip install --quiet httpx
+      - name: Run model check
+        run: python scripts/check_models.py
+      - name: Commit if changed
+        run: |
+          git config user.name "ghostforge-bot"
+          git config user.email "bot@ghostforge.dev"
+          git add data/models.json
+          if git diff --staged --quiet; then
+            echo "Keine Aenderungen."
+          else
+            git commit -m "auto: model check update ($(date -u +%Y-%m-%d))"
+            git push
+          fi
