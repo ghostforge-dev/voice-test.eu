@@ -1,0 +1,183 @@
+{
+  "model": "suno/bark",
+  "license": "mit",
+  "framework": "bark",
+  "samples": [
+    {
+      "voice_id": "seed_42",
+      "voice_name": "Bark random (seed_42)",
+      "language": "de",
+      "variant": "v1_simple",
+      "gender": "unknown",
+      "model_type": "bark",
+      "model_size_mb": 5000,
+      "audio_path": "/root/out/audio/oss/bark/seed_42/de_v1_simple.wav",
+      "generation_time_ms": null,
+      "sample_rate": 24000
+    },
+    {
+      "voice_id": "seed_42",
+      "voice_name": "Bark random (seed_42)",
+      "language": "de",
+      "variant": "v2_medium",
+      "gender": "unknown",
+      "model_type": "bark",
+      "model_size_mb": 5000,
+      "audio_path": "/root/out/audio/oss/bark/seed_42/de_v2_medium.wav",
+      "generation_time_ms": null,
+      "sample_rate": 24000
+    },
+    {
+      "voice_id": "seed_42",
+      "voice_name": "Bark random (seed_42)",
+      "language": "de",
+      "variant": "v3_emotional",
+      "gender": "unknown",
+      "model_type": "bark",
+      "model_size_mb": 5000,
+      "audio_path": "/root/out/audio/oss/bark/seed_42/de_v3_emotional.wav",
+      "generation_time_ms": null,
+      "sample_rate": 24000
+    },
+    {
+      "voice_id": "seed_42",
+      "voice_name": "Bark random (seed_42)",
+      "language": "en",
+      "variant": "v1_simple",
+      "gender": "unknown",
+      "model_type": "bark",
+      "model_size_mb": 5000,
+      "audio_path": "/root/out/audio/oss/bark/seed_42/en_v1_simple.wav",
+      "generation_time_ms": null,
+      "sample_rate": 24000
+    },
+    {
+      "voice_id": "seed_42",
+      "voice_name": "Bark random (seed_42)",
+      "language": "en",
+      "variant": "v2_medium",
+      "gender": "unknown",
+      "model_type": "bark",
+      "model_size_mb": 5000,
+      "audio_path": "/root/out/audio/oss/bark/seed_42/en_v2_medium.wav",
+      "generation_time_ms": null,
+      "sample_rate": 24000
+    },
+    {
+      "voice_id": "seed_42",
+      "voice_name": "Bark random (seed_42)",
+      "language": "en",
+      "variant": "v3_emotional",
+      "gender": "unknown",
+      "model_type": "bark",
+      "model_size_mb": 5000,
+      "audio_path": "/root/out/audio/oss/bark/seed_42/en_v3_emotional.wav",
+      "generation_time_ms": null,
+      "sample_rate": 24000
+    },
+    {
+      "voice_id": "seed_42",
+      "voice_name": "Bark random (seed_42)",
+      "language": "es",
+      "variant": "v1_simple",
+      "gender": "unknown",
+      "model_type": "bark",
+      "model_size_mb": 5000,
+      "audio_path": "/root/out/audio/oss/bark/seed_42/es_v1_simple.wav",
+      "generation_time_ms": null,
+      "sample_rate": 24000
+    },
+    {
+      "voice_id": "seed_42",
+      "voice_name": "Bark random (seed_42)",
+      "language": "es",
+      "variant": "v2_medium",
+      "gender": "unknown",
+      "model_type": "bark",
+      "model_size_mb": 5000,
+      "audio_path": "/root/out/audio/oss/bark/seed_42/es_v2_medium.wav",
+      "generation_time_ms": null,
+      "sample_rate": 24000
+    },
+    {
+      "voice_id": "seed_42",
+      "voice_name": "Bark random (seed_42)",
+      "language": "es",
+      "variant": "v3_emotional",
+      "gender": "unknown",
+      "model_type": "bark",
+      "model_size_mb": 5000,
+      "audio_path": "/root/out/audio/oss/bark/seed_42/es_v3_emotional.wav",
+      "generation_time_ms": null,
+      "sample_rate": 24000
+    },
+    {
+      "voice_id": "seed_42",
+      "voice_name": "Bark random (seed_42)",
+      "language": "fr",
+      "variant": "v1_simple",
+      "gender": "unknown",
+      "model_type": "bark",
+      "model_size_mb": 5000,
+      "audio_path": "/root/out/audio/oss/bark/seed_42/fr_v1_simple.wav",
+      "generation_time_ms": null,
+      "sample_rate": 24000
+    },
+    {
+      "voice_id": "seed_42",
+      "voice_name": "Bark random (seed_42)",
+      "language": "fr",
+      "variant": "v2_medium",
+      "gender": "unknown",
+      "model_type": "bark",
+      "model_size_mb": 5000,
+      "audio_path": "/root/out/audio/oss/bark/seed_42/fr_v2_medium.wav",
+      "generation_time_ms": null,
+      "sample_rate": 24000
+    },
+    {
+      "voice_id": "seed_42",
+      "voice_name": "Bark random (seed_42)",
+      "language": "fr",
+      "variant": "v3_emotional",
+      "gender": "unknown",
+      "model_type": "bark",
+      "model_size_mb": 5000,
+      "audio_path": "/root/out/audio/oss/bark/seed_42/fr_v3_emotional.wav",
+      "generation_time_ms": null,
+      "sample_rate": 24000
+    },
+    {
+      "voice_id": "seed_42",
+      "voice_name": "Bark random (seed_42)",
+      "language": "it",
+      "variant": "v1_simple",
+      "gender": "unknown",
+      "model_type": "bark",
+      "model_size_mb": 5000,
+      "audio_path": "/root/out/audio/oss/bark/seed_42/it_v1_simple.wav",
+      "generation_time_ms": null,
+      "sample_rate": 24000
+    },
+    {
+      "voice_id": "seed_42",
+      "voice_name": "Bark random (seed_42)",
+      "language": "it",
+      "variant": "v2_medium",
+      "gender": "unknown",
+      "model_type": "bark",
+      "model_size_mb": 5000,
+      "audio_path": "/root/out/audio/oss/bark/seed_42/it_v2_medium.wav",
+      "generation_time_ms": null,
+      "sample_rate": 24000
+    }
+  ],
+  "counters": {
+    "ok": 14,
+    "skip": 0,
+    "err": 0
+  },
+  "errors": [],
+  "note": "Bark war zu langsam fuer 30 Samples. Abbruch bei 14. Bark erzeugt zufaellige Stimmen pro Aufruf.",
+  "generated_at": "2026-08-05T00:32:53+0000"
+}
