@@ -128,31 +128,40 @@ def discover_voices(client) -> list[dict]:
     return voices
 
 
-def synth_one(client, voice: dict, lang_short: str, variant: str,
+def synth_one(client, voice: dict, engine: str, lang_short: str, variant: str,
               text: str, out_path: Path) -> int:
-    """Eine Synthese, gibt Audio-Laenge in ms zurueck."""
-    # Engine wählen: neural bevorzugt, falls unterstützt
-    engine = "neural" if "neural" in voice["engine"] else "standard"
+    """Eine Synthese mit expliziter Engine, gibt Audio-Laenge in ms zurueck.
+
+    M52: JEDE unterstuetzte Engine wird separat synthetisiert (standard,
+    neural, generative). Kein Fallback mehr auf standard.
+    """
     t0 = time.monotonic()
     for attempt in range(1, MAX_RETRIES + 2):
         try:
-            resp = client.synthesize_speech(
+            kwargs = dict(
                 Engine=engine,
                 Text=text,
                 OutputFormat="mp3",
                 VoiceId=voice["id"],
                 SampleRate="24000",
             )
+            # Engine-Parameter nur setzen, wenn die Stimme diese Engine
+            # unterstuetzt (sonst InvalidParameterCombination).
+            try:
+                resp = client.synthesize_speech(**kwargs)
+            except ClientError as e:
+                # Manche Stimmen wollen keinen Engine-Parameter bei standard.
+                if "InvalidParameterCombination" in str(type(e)) and engine == "standard":
+                    kwargs.pop("Engine")
+                    resp = client.synthesize_speech(**kwargs)
+                else:
+                    raise
             audio_stream = resp["AudioStream"].read()
             if len(audio_stream) < 256:
                 raise RuntimeError("leere Audio-Antwort")
             out_path.write_bytes(audio_stream)
             return int((time.monotonic() - t0) * 1000)
-        except ClientError as e:
-            # bei Engine=neural Fallback auf standard
-            if engine == "neural" and "engine" in str(e).lower():
-                engine = "standard"
-                continue
+        except ClientError:
             if attempt > MAX_RETRIES:
                 raise
             time.sleep(1.5 * attempt)
@@ -196,19 +205,35 @@ def main() -> int:
     client = session.client("polly")
 
     voices = discover_voices(client)
-    existing = load_existing_samples()
+
+    # M52: Alte AWS-Samples mit old-ID-Schema (ohne engine) verwerfen,
+    # weil wir JEDE Engine separat erfassen. sample-id schema neu:
+    #   aws-{voice_id}-{engine}-{lang}-{variant}
+    old_existing = load_existing_samples()
+    existing = [s for s in old_existing
+                if not (s.get("provider") == "aws"
+                        and f"-{s.get('language')}-v" in s.get("id", "")
+                        and f"-{s.get('model_type', 'neural' if 'neural' in str(s.get('engine','')) else 'standard')}-" not in s.get("id", ""))]
+    # Simplerer Filter: alle alten aws-Samples verwerfen, neuer Lauf generiert neu
+    existing = [s for s in old_existing if s.get("provider") != "aws"]
     existing_ids = {s["id"] for s in existing}
     new_samples: list[dict] = []
     counters = {"ok": 0, "skip": 0, "err": 0}
     errors: list[str] = []
 
+    # M52: Pro Stimme × JEDE unterstuetzte Engine × Sprache × 3 Varianten
+    ENGINES = ["generative", "neural", "standard"]
     plan_total = 0
     for v in voices:
-        for lang in v["languages"]:
-            if lang not in available_langs:
+        for engine in ENGINES:
+            if engine not in v["engine"]:
                 continue
-            plan_total += len(VARIANTS)
-    print(f"Plan: {plan_total} Samples ({len(voices)} Stimmen × bis zu 3 Varianten)",
+            for lang in v["languages"]:
+                if lang not in available_langs:
+                    continue
+                plan_total += len(VARIANTS)
+    print(f"Plan: {plan_total} Samples "
+          f"({len(voices)} Stimmen × alle Engines × bis zu 3 Varianten)",
           flush=True)
 
     for v in voices:
@@ -216,81 +241,85 @@ def main() -> int:
         safe_voice = "".join(c if c.isalnum() or c in "-_" else "_" for c in voice_id)
         out_dir = AUDIO_DIR / "aws" / safe_voice
         out_dir.mkdir(parents=True, exist_ok=True)
-        for lang in v["languages"]:
-            if lang not in available_langs:
+        for engine in ENGINES:
+            if engine not in v["engine"]:
                 continue
-            for variant in VARIANTS:
-                text = texts["texts"][variant].get(lang)
-                if not text:
+            for lang in v["languages"]:
+                if lang not in available_langs:
                     continue
-                sid = f"aws-{safe_voice}-{lang}-{variant}"
-                out_path = out_dir / f"{lang}_{variant}.mp3"
-                if sid in existing_ids:
-                    counters["skip"] += 1
-                    continue
-                if out_path.exists() and out_path.stat().st_size > 1024:
-                    # Datei auf Disk, aber nicht in samples.json -> Metadaten nachtragen
-                    st = out_path.stat()
-                    new_samples.append({
-                        "id": sid,
-                        "provider": "aws",
-                        "provider_display": "Amazon Polly",
-                        "voice_id": voice_id,
-                        "voice_name": v["name"],
-                        "language": lang,
-                        "language_name": next(
-                            (l["name"] for l in texts.get("languages", [])
-                             if l.get("code") == lang), lang),
-                        "variant": variant,
-                        "gender": v["gender"],
-                        "model_type": "neural" if "neural" in v["engine"] else "standard",
-                        "model_size_mb": None,
-                        "audio_path": str(out_path.relative_to(ROOT)),
-                        "provider_url": "https://aws.amazon.com/polly/",
-                        "license": "proprietary",
-                        "generation_time_ms": None,
-                        "sample_rate": 24000,
-                    })
-                    counters["skip"] += 1
-                    continue
-                try:
-                    ms = synth_one(client, v, lang, variant, text, out_path)
-                    _tag_mp3(out_path, "aws", v["name"])
-                    new_samples.append({
-                        "id": sid,
-                        "provider": "aws",
-                        "provider_display": "Amazon Polly",
-                        "voice_id": voice_id,
-                        "voice_name": v["name"],
-                        "language": lang,
-                        "language_name": next(
-                            (l["name"] for l in texts.get("languages", [])
-                             if l.get("code") == lang), lang),
-                        "variant": variant,
-                        "gender": v["gender"],
-                        "model_type": "neural" if "neural" in v["engine"] else "standard",
-                        "model_size_mb": None,
-                        "audio_path": str(out_path.relative_to(ROOT)),
-                        "provider_url": "https://aws.amazon.com/polly/",
-                        "license": "proprietary",
-                        "generation_time_ms": ms,
-                        "sample_rate": 24000,
-                    })
-                    counters["ok"] += 1
-                except Exception as e:
-                    counters["err"] += 1
-                    errors.append(f"aws/{voice_id}/{lang}_{variant}: {e}")
-                    if out_path.exists():
-                        try:
-                            out_path.unlink()
-                        except Exception:
-                            pass
+                for variant in VARIANTS:
+                    text = texts["texts"][variant].get(lang)
+                    if not text:
+                        continue
+                    sid = f"aws-{safe_voice}-{engine}-{lang}-{variant}"
+                    out_path = out_dir / f"{engine}_{lang}_{variant}.mp3"
+                    if sid in existing_ids:
+                        counters["skip"] += 1
+                        continue
+                    if out_path.exists() and out_path.stat().st_size > 1024:
+                        # Datei auf Disk, aber nicht in samples.json -> Metadaten nachtragen
+                        new_samples.append({
+                            "id": sid,
+                            "provider": "aws",
+                            "provider_display": "Amazon Polly",
+                            "voice_id": voice_id,
+                            "voice_name": v["name"],
+                            "language": lang,
+                            "language_name": next(
+                                (l["name"] for l in texts.get("languages", [])
+                                 if l.get("code") == lang), lang),
+                            "variant": variant,
+                            "gender": v["gender"],
+                            "engine": engine,
+                            "model_type": engine,
+                            "model_size_mb": None,
+                            "audio_path": str(out_path.relative_to(ROOT)),
+                            "provider_url": "https://aws.amazon.com/polly/",
+                            "license": "proprietary",
+                            "generation_time_ms": None,
+                            "sample_rate": 24000,
+                        })
+                        counters["skip"] += 1
+                        continue
+                    try:
+                        ms = synth_one(client, v, engine, lang, variant, text, out_path)
+                        _tag_mp3(out_path, "aws", f"{v['name']} ({engine})")
+                        new_samples.append({
+                            "id": sid,
+                            "provider": "aws",
+                            "provider_display": "Amazon Polly",
+                            "voice_id": voice_id,
+                            "voice_name": v["name"],
+                            "language": lang,
+                            "language_name": next(
+                                (l["name"] for l in texts.get("languages", [])
+                                 if l.get("code") == lang), lang),
+                            "variant": variant,
+                            "gender": v["gender"],
+                            "engine": engine,
+                            "model_type": engine,
+                            "model_size_mb": None,
+                            "audio_path": str(out_path.relative_to(ROOT)),
+                            "provider_url": "https://aws.amazon.com/polly/",
+                            "license": "proprietary",
+                            "generation_time_ms": ms,
+                            "sample_rate": 24000,
+                        })
+                        counters["ok"] += 1
+                    except Exception as e:
+                        counters["err"] += 1
+                        errors.append(f"aws/{voice_id}/{engine}/{lang}_{variant}: {e}")
+                        if out_path.exists():
+                            try:
+                                out_path.unlink()
+                            except Exception:
+                                pass
 
-        done = counters["ok"] + counters["err"] + counters["skip"]
-        if done % 30 < len(VARIANTS):
-            print(f"  Progress: {done}/{plan_total} "
-                  f"(ok={counters['ok']}, skip={counters['skip']}, err={counters['err']})",
-                  flush=True)
+            done = counters["ok"] + counters["err"] + counters["skip"]
+            if done % 30 < len(VARIANTS):
+                print(f"  Progress: {done}/{plan_total} "
+                      f"(ok={counters['ok']}, skip={counters['skip']}, err={counters['err']})",
+                      flush=True)
 
     save_samples(existing, new_samples)
     print(f"\nFertig: ok={counters['ok']}, skip={counters['skip']}, err={counters['err']}",
