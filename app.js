@@ -21,7 +21,7 @@ const State = {
 const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => document.querySelectorAll(sel);
 
-const PROVIDER_ORDER = ['google', 'aws', 'azure', 'openai', 'elevenlabs', 'edge', 'knowlez', 'piper', 'kokoro', 'bark', 'xtts'];
+const PROVIDER_ORDER = ['google', 'aws', 'azure', 'openai', 'elevenlabs', 'edge', 'knowlez', 'piper', 'kokoro', 'bark', 'f5', 'xtts'];
 
 function providerDisplay(p) {
   const map = {
@@ -29,12 +29,13 @@ function providerDisplay(p) {
     openai: 'OpenAI', elevenlabs: 'ElevenLabs', edge: 'Microsoft Edge TTS',
     knowlez: 'Knowlez', piper: 'Piper (rhasspy)',
     xtts: 'Coqui XTTS-v2', kokoro: 'Kokoro-82M', bark: 'Suno Bark',
+    f5: 'F5-TTS (voice clone)',
   };
   return map[p] || p;
 }
 
 function providerOSS(p) {
-  return ['piper', 'xtts', 'kokoro', 'bark'].includes(p);
+  return ['piper', 'xtts', 'kokoro', 'bark', 'f5'].includes(p);
 }
 
 async function loadData() {
