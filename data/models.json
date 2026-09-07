@@ -1,10 +1,10 @@
 {
   "_meta": {
-    "generated_at": "2026-08-31T09:21:17+0000",
-    "total": 156,
+    "generated_at": "2026-09-07T07:57:55+0000",
+    "total": 162,
     "source": "huggingface",
     "filter": "downloads>=500, >=1 EU language, OSS license",
-    "new_this_run": 12,
+    "new_this_run": 6,
     "broken_links": 1
   },
   "models": [
@@ -14,7 +14,7 @@
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 11651409,
+      "downloads": 11464443,
       "size_mb": null,
       "languages": [
         "en"
@@ -24,7 +24,7 @@
       ],
       "model_url": "https://huggingface.co/hexgrad/Kokoro-82M",
       "framework": "kokoro",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false
     },
@@ -34,7 +34,7 @@
       "source": "huggingface",
       "license": "mit",
       "license_oss": true,
-      "downloads": 1768916,
+      "downloads": 1785897,
       "size_mb": null,
       "languages": [
         "da",
@@ -68,7 +68,7 @@
       ],
       "model_url": "https://huggingface.co/ResembleAI/chatterbox",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false
     },
@@ -78,7 +78,7 @@
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 1190389,
+      "downloads": 1080263,
       "size_mb": null,
       "languages": [
         "de",
@@ -98,7 +98,7 @@
       ],
       "model_url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false
     },
@@ -108,7 +108,7 @@
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 1125138,
+      "downloads": 1011502,
       "size_mb": null,
       "languages": [
         "en"
@@ -118,7 +118,7 @@
       ],
       "model_url": "https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX",
       "framework": "kokoro",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false
     },
@@ -128,7 +128,7 @@
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 899895,
+      "downloads": 797878,
       "size_mb": null,
       "languages": [
         "de",
@@ -148,7 +148,37 @@
       ],
       "model_url": "https://huggingface.co/Serveurperso/Qwen3-TTS-GGUF",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false
+    },
+    {
+      "id": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+      "name": "Qwen3",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 625988,
+      "size_mb": null,
+      "languages": [
+        "de",
+        "en",
+        "es",
+        "fr",
+        "it",
+        "pt"
+      ],
+      "eu_languages": [
+        "de",
+        "en",
+        "es",
+        "fr",
+        "it",
+        "pt"
+      ],
+      "model_url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false
     },
@@ -173,42 +203,12 @@
       "samples_generated": false
     },
     {
-      "id": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
-      "name": "Qwen3",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 552919,
-      "size_mb": null,
-      "languages": [
-        "de",
-        "en",
-        "es",
-        "fr",
-        "it",
-        "pt"
-      ],
-      "eu_languages": [
-        "de",
-        "en",
-        "es",
-        "fr",
-        "it",
-        "pt"
-      ],
-      "model_url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base",
-      "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false
-    },
-    {
       "id": "pnnbao-ump/VieNeu-TTS-v3-Turbo",
       "name": "VieNeu",
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 430207,
+      "downloads": 489950,
       "size_mb": null,
       "languages": [
         "en"
@@ -218,7 +218,7 @@
       ],
       "model_url": "https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Turbo",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false
     },
@@ -228,7 +228,7 @@
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 413426,
+      "downloads": 467750,
       "size_mb": null,
       "languages": [
         "cs",
@@ -266,27 +266,7 @@
       ],
       "model_url": "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false
-    },
-    {
-      "id": "ai4bharat/indic-parler-tts",
-      "name": "indic",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 350594,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/ai4bharat/indic-parler-tts",
-      "framework": "parlertts",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false
     },
@@ -296,7 +276,7 @@
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 335473,
+      "downloads": 386547,
       "size_mb": null,
       "languages": [
         "da",
@@ -330,7 +310,27 @@
       ],
       "model_url": "https://huggingface.co/openbmb/VoxCPM2",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false
+    },
+    {
+      "id": "ai4bharat/indic-parler-tts",
+      "name": "indic",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 356885,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/ai4bharat/indic-parler-tts",
+      "framework": "parlertts",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false
     },
@@ -340,7 +340,7 @@
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 281235,
+      "downloads": 288303,
       "size_mb": null,
       "languages": [
         "en"
@@ -350,7 +350,27 @@
       ],
       "model_url": "https://huggingface.co/speechbrain/tts-hifigan-libritts-22050Hz",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false
+    },
+    {
+      "id": "microsoft/VibeVoice-1.5B",
+      "name": "VibeVoice",
+      "source": "huggingface",
+      "license": "mit",
+      "license_oss": true,
+      "downloads": 252938,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/microsoft/VibeVoice-1.5B",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false
     },
@@ -360,7 +380,7 @@
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 237399,
+      "downloads": 233552,
       "size_mb": null,
       "languages": [
         "en"
@@ -370,30 +390,10 @@
       ],
       "model_url": "https://huggingface.co/canopylabs/orpheus-3b-0.1-ft",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-04"
-    },
-    {
-      "id": "kenpath/svara-tts-v1",
-      "name": "svara",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 213426,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/kenpath/svara-tts-v1",
-      "framework": "unknown",
-      "last_checked": "2026-08-24T03:53:44+0000",
-      "status": "active",
-      "samples_generated": false
     },
     {
       "id": "OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5",
@@ -444,12 +444,54 @@
       "samples_generated": false
     },
     {
+      "id": "kyutai/tts-1.6b-en_fr",
+      "name": "tts",
+      "source": "huggingface",
+      "license": "cc-by-4.0",
+      "license_oss": true,
+      "downloads": 166974,
+      "size_mb": null,
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "eu_languages": [
+        "en",
+        "fr"
+      ],
+      "model_url": "https://huggingface.co/kyutai/tts-1.6b-en_fr",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false
+    },
+    {
+      "id": "kenpath/svara-tts-v1",
+      "name": "svara",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 160509,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/kenpath/svara-tts-v1",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false
+    },
+    {
       "id": "Serveurperso/OmniVoice-GGUF",
       "name": "OmniVoice",
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 186571,
+      "downloads": 156923,
       "size_mb": null,
       "languages": [
         "de",
@@ -469,30 +511,10 @@
       ],
       "model_url": "https://huggingface.co/Serveurperso/OmniVoice-GGUF",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-04"
-    },
-    {
-      "id": "microsoft/VibeVoice-1.5B",
-      "name": "VibeVoice",
-      "source": "huggingface",
-      "license": "mit",
-      "license_oss": true,
-      "downloads": 155945,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/microsoft/VibeVoice-1.5B",
-      "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false
     },
     {
       "id": "sesame/csm-1b",
@@ -500,7 +522,7 @@
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 149362,
+      "downloads": 144061,
       "size_mb": null,
       "languages": [
         "en"
@@ -510,43 +532,38 @@
       ],
       "model_url": "https://huggingface.co/sesame/csm-1b",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false
     },
     {
-      "id": "parler-tts/parler-tts-mini-multilingual-v1.1",
-      "name": "parler",
+      "id": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+      "name": "Fun",
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 112783,
+      "downloads": 97359,
       "size_mb": null,
       "languages": [
         "de",
         "en",
         "es",
         "fr",
-        "it",
-        "nl",
-        "pl",
-        "pt"
+        "it"
       ],
       "eu_languages": [
         "de",
         "en",
         "es",
         "fr",
-        "it",
-        "nl",
-        "pl",
-        "pt"
+        "it"
       ],
-      "model_url": "https://huggingface.co/parler-tts/parler-tts-mini-multilingual-v1.1",
-      "framework": "parlertts",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "model_url": "https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
-      "samples_generated": false
+      "samples_generated": false,
+      "new_at": "2026-08-04"
     },
     {
       "id": "software-mansion/react-native-executorch-kokoro",
@@ -586,7 +603,7 @@
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 80164,
+      "downloads": 82194,
       "size_mb": null,
       "languages": [
         "en"
@@ -596,31 +613,30 @@
       ],
       "model_url": "https://huggingface.co/mlx-community/Kokoro-82M-bf16",
       "framework": "kokoro",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false
     },
     {
-      "id": "kyutai/tts-1.6b-en_fr",
-      "name": "tts",
+      "id": "unsloth/orpheus-3b-0.1-ft",
+      "name": "orpheus",
       "source": "huggingface",
-      "license": "cc-by-4.0",
+      "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 76169,
+      "downloads": 66095,
       "size_mb": null,
       "languages": [
-        "en",
-        "fr"
+        "en"
       ],
       "eu_languages": [
-        "en",
-        "fr"
+        "en"
       ],
-      "model_url": "https://huggingface.co/kyutai/tts-1.6b-en_fr",
+      "model_url": "https://huggingface.co/unsloth/orpheus-3b-0.1-ft",
       "framework": "unknown",
-      "last_checked": "2026-08-04T22:39:42+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
-      "samples_generated": false
+      "samples_generated": false,
+      "new_at": "2026-08-04"
     },
     {
       "id": "pnnbao-ump/VieNeu-TTS-v2",
@@ -685,12 +701,235 @@
       "samples_generated": false
     },
     {
+      "id": "onnx-community/Kokoro-82M-ONNX",
+      "name": "Kokoro",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 50723,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/onnx-community/Kokoro-82M-ONNX",
+      "framework": "kokoro",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false
+    },
+    {
+      "id": "parler-tts/parler-tts-mini-multilingual-v1.1",
+      "name": "parler",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 44712,
+      "size_mb": null,
+      "languages": [
+        "de",
+        "en",
+        "es",
+        "fr",
+        "it",
+        "nl",
+        "pl",
+        "pt"
+      ],
+      "eu_languages": [
+        "de",
+        "en",
+        "es",
+        "fr",
+        "it",
+        "nl",
+        "pl",
+        "pt"
+      ],
+      "model_url": "https://huggingface.co/parler-tts/parler-tts-mini-multilingual-v1.1",
+      "framework": "parlertts",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false
+    },
+    {
+      "id": "vibevoice/VibeVoice-1.5B",
+      "name": "VibeVoice",
+      "source": "huggingface",
+      "license": "mit",
+      "license_oss": true,
+      "downloads": 44571,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/vibevoice/VibeVoice-1.5B",
+      "framework": "unknown",
+      "last_checked": "2026-08-17T03:49:47+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-10"
+    },
+    {
+      "id": "suno/bark",
+      "name": "bark",
+      "source": "huggingface",
+      "license": "mit",
+      "license_oss": true,
+      "downloads": 35183,
+      "size_mb": null,
+      "languages": [
+        "de",
+        "en",
+        "es",
+        "fr",
+        "it",
+        "pl",
+        "pt"
+      ],
+      "eu_languages": [
+        "de",
+        "en",
+        "es",
+        "fr",
+        "it",
+        "pl",
+        "pt"
+      ],
+      "model_url": "https://huggingface.co/suno/bark",
+      "framework": "bark",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false
+    },
+    {
+      "id": "vibevoice/VibeVoice-7B",
+      "name": "VibeVoice",
+      "source": "huggingface",
+      "license": "mit",
+      "license_oss": true,
+      "downloads": 32850,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/vibevoice/VibeVoice-7B",
+      "framework": "unknown",
+      "last_checked": "2026-08-24T03:53:44+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-04"
+    },
+    {
+      "id": "suno/bark-small",
+      "name": "bark",
+      "source": "huggingface",
+      "license": "mit",
+      "license_oss": true,
+      "downloads": 31787,
+      "size_mb": null,
+      "languages": [
+        "de",
+        "en",
+        "es",
+        "fr",
+        "it",
+        "pl",
+        "pt"
+      ],
+      "eu_languages": [
+        "de",
+        "en",
+        "es",
+        "fr",
+        "it",
+        "pl",
+        "pt"
+      ],
+      "model_url": "https://huggingface.co/suno/bark-small",
+      "framework": "bark",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false
+    },
+    {
+      "id": "nari-labs/Dia-1.6B",
+      "name": "Dia",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 29556,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/nari-labs/Dia-1.6B",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-04"
+    },
+    {
+      "id": "vibevoice/VibeVoice-1.5B-hf",
+      "name": "VibeVoice",
+      "source": "huggingface",
+      "license": "mit",
+      "license_oss": true,
+      "downloads": 27069,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/vibevoice/VibeVoice-1.5B-hf",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-09-07"
+    },
+    {
+      "id": "openbmb/VoxCPM-0.5B",
+      "name": "VoxCPM",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 19967,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/openbmb/VoxCPM-0.5B",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-17"
+    },
+    {
       "id": "OpenMOSS-Team/MOSS-TTS-Realtime",
       "name": "MOSS",
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 53700,
+      "downloads": 18323,
       "size_mb": null,
       "languages": [
         "cs",
@@ -722,18 +961,18 @@
       ],
       "model_url": "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Realtime",
       "framework": "unknown",
-      "last_checked": "2026-08-10T04:29:22+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-04"
     },
     {
-      "id": "unsloth/orpheus-3b-0.1-ft",
+      "id": "mlx-community/orpheus-3b-0.1-ft-bf16",
       "name": "orpheus",
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 53106,
+      "downloads": 17449,
       "size_mb": null,
       "languages": [
         "en"
@@ -741,49 +980,20 @@
       "eu_languages": [
         "en"
       ],
-      "model_url": "https://huggingface.co/unsloth/orpheus-3b-0.1-ft",
+      "model_url": "https://huggingface.co/mlx-community/orpheus-3b-0.1-ft-bf16",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-04"
     },
     {
-      "id": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
-      "name": "Fun",
+      "id": "parler-tts/parler-tts-mini-v1",
+      "name": "parler",
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 52449,
-      "size_mb": null,
-      "languages": [
-        "de",
-        "en",
-        "es",
-        "fr",
-        "it"
-      ],
-      "eu_languages": [
-        "de",
-        "en",
-        "es",
-        "fr",
-        "it"
-      ],
-      "model_url": "https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
-      "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-04"
-    },
-    {
-      "id": "onnx-community/Kokoro-82M-ONNX",
-      "name": "Kokoro",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 51943,
+      "downloads": 16914,
       "size_mb": null,
       "languages": [
         "en"
@@ -791,19 +1001,19 @@
       "eu_languages": [
         "en"
       ],
-      "model_url": "https://huggingface.co/onnx-community/Kokoro-82M-ONNX",
-      "framework": "kokoro",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "model_url": "https://huggingface.co/parler-tts/parler-tts-mini-v1",
+      "framework": "parlertts",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false
     },
     {
-      "id": "vibevoice/VibeVoice-1.5B",
-      "name": "VibeVoice",
+      "id": "maya-research/Veena",
+      "name": "Veena",
       "source": "huggingface",
-      "license": "mit",
+      "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 44571,
+      "downloads": 14069,
       "size_mb": null,
       "languages": [
         "en"
@@ -811,139 +1021,33 @@
       "eu_languages": [
         "en"
       ],
-      "model_url": "https://huggingface.co/vibevoice/VibeVoice-1.5B",
+      "model_url": "https://huggingface.co/maya-research/Veena",
       "framework": "unknown",
-      "last_checked": "2026-08-17T03:49:47+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
-      "new_at": "2026-08-10"
+      "new_at": "2026-08-04"
     },
     {
-      "id": "syvai/plapre-nano",
-      "name": "plapre",
+      "id": "OuteAI/OuteTTS-0.1-350M-GGUF",
+      "name": "OuteTTS",
       "source": "huggingface",
       "license": "cc-by-4.0",
       "license_oss": true,
-      "downloads": 38869,
+      "downloads": 13719,
       "size_mb": null,
       "languages": [
-        "da"
+        "en"
       ],
       "eu_languages": [
-        "da"
+        "en"
       ],
-      "model_url": "https://huggingface.co/syvai/plapre-nano",
-      "framework": "unknown",
-      "last_checked": "2026-08-04T22:56:00+0000",
+      "model_url": "https://huggingface.co/OuteAI/OuteTTS-0.1-350M-GGUF",
+      "framework": "parlertts",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
-      "new_at": "2026-08-04"
-    },
-    {
-      "id": "suno/bark",
-      "name": "bark",
-      "source": "huggingface",
-      "license": "mit",
-      "license_oss": true,
-      "downloads": 38149,
-      "size_mb": null,
-      "languages": [
-        "de",
-        "en",
-        "es",
-        "fr",
-        "it",
-        "pl",
-        "pt"
-      ],
-      "eu_languages": [
-        "de",
-        "en",
-        "es",
-        "fr",
-        "it",
-        "pl",
-        "pt"
-      ],
-      "model_url": "https://huggingface.co/suno/bark",
-      "framework": "bark",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false
-    },
-    {
-      "id": "vibevoice/VibeVoice-7B",
-      "name": "VibeVoice",
-      "source": "huggingface",
-      "license": "mit",
-      "license_oss": true,
-      "downloads": 32850,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/vibevoice/VibeVoice-7B",
-      "framework": "unknown",
-      "last_checked": "2026-08-24T03:53:44+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-04"
-    },
-    {
-      "id": "nari-labs/Dia-1.6B",
-      "name": "Dia",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 31231,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/nari-labs/Dia-1.6B",
-      "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-04"
-    },
-    {
-      "id": "suno/bark-small",
-      "name": "bark",
-      "source": "huggingface",
-      "license": "mit",
-      "license_oss": true,
-      "downloads": 29104,
-      "size_mb": null,
-      "languages": [
-        "de",
-        "en",
-        "es",
-        "fr",
-        "it",
-        "pl",
-        "pt"
-      ],
-      "eu_languages": [
-        "de",
-        "en",
-        "es",
-        "fr",
-        "it",
-        "pl",
-        "pt"
-      ],
-      "model_url": "https://huggingface.co/suno/bark-small",
-      "framework": "bark",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false
+      "new_at": "2026-08-17"
     },
     {
       "id": "moonshotai/Kimi-Audio-7B-Instruct",
@@ -951,7 +1055,7 @@
       "source": "huggingface",
       "license": "mit",
       "license_oss": true,
-      "downloads": 27706,
+      "downloads": 13355,
       "size_mb": null,
       "languages": [
         "en"
@@ -961,7 +1065,7 @@
       ],
       "model_url": "https://huggingface.co/moonshotai/Kimi-Audio-7B-Instruct",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false
     },
@@ -971,7 +1075,7 @@
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 20624,
+      "downloads": 12664,
       "size_mb": null,
       "languages": [
         "de",
@@ -993,93 +1097,10 @@
       ],
       "model_url": "https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6b",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-04"
-    },
-    {
-      "id": "openbmb/VoxCPM-0.5B",
-      "name": "VoxCPM",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 19577,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/openbmb/VoxCPM-0.5B",
-      "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-17"
-    },
-    {
-      "id": "mlx-community/orpheus-3b-0.1-ft-bf16",
-      "name": "orpheus",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 18329,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/mlx-community/orpheus-3b-0.1-ft-bf16",
-      "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-04"
-    },
-    {
-      "id": "parler-tts/parler-tts-mini-v1",
-      "name": "parler",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 17466,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/parler-tts/parler-tts-mini-v1",
-      "framework": "parlertts",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false
-    },
-    {
-      "id": "OuteAI/OuteTTS-0.1-350M-GGUF",
-      "name": "OuteTTS",
-      "source": "huggingface",
-      "license": "cc-by-4.0",
-      "license_oss": true,
-      "downloads": 13725,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/OuteAI/OuteTTS-0.1-350M-GGUF",
-      "framework": "parlertts",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-17"
     },
     {
       "id": "parler-tts/parler-tts-large-v1",
@@ -1087,7 +1108,7 @@
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 12736,
+      "downloads": 11516,
       "size_mb": null,
       "languages": [
         "en"
@@ -1097,7 +1118,7 @@
       ],
       "model_url": "https://huggingface.co/parler-tts/parler-tts-large-v1",
       "framework": "parlertts",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false
     },
@@ -1107,7 +1128,7 @@
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 9976,
+      "downloads": 10609,
       "size_mb": null,
       "languages": [
         "en"
@@ -1117,7 +1138,7 @@
       ],
       "model_url": "https://huggingface.co/NeuML/ljspeech-jets-onnx",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-04"
@@ -1143,27 +1164,6 @@
       "samples_generated": false,
       "new_at": "2026-08-04",
       "deprecated_reason": "HTTP 401"
-    },
-    {
-      "id": "maya-research/maya1",
-      "name": "maya1",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 9699,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/maya-research/maya1",
-      "framework": "unknown",
-      "last_checked": "2026-08-17T03:49:47+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-04"
     },
     {
       "id": "SPRINGLab/Indic-Mio",
@@ -1242,6 +1242,48 @@
       "samples_generated": false
     },
     {
+      "id": "isaiahbjork/orpheus-3b-0.1-ft-Q4_K_M-GGUF",
+      "name": "orpheus",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 9298,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/isaiahbjork/orpheus-3b-0.1-ft-Q4_K_M-GGUF",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-04"
+    },
+    {
+      "id": "maya-research/maya1",
+      "name": "maya1",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 9152,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/maya-research/maya1",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-04"
+    },
+    {
       "id": "cstr/cosyvoice3-0.5b-2512-GGUF",
       "name": "cosyvoice3",
       "source": "huggingface",
@@ -1273,12 +1315,12 @@
       "new_at": "2026-08-04"
     },
     {
-      "id": "unsloth/orpheus-3b-0.1-ft-GGUF",
-      "name": "orpheus",
+      "id": "DennisHuang648/VoxCPM2-GGUF",
+      "name": "VoxCPM2",
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 7558,
+      "downloads": 8468,
       "size_mb": null,
       "languages": [
         "en"
@@ -1286,9 +1328,9 @@
       "eu_languages": [
         "en"
       ],
-      "model_url": "https://huggingface.co/unsloth/orpheus-3b-0.1-ft-GGUF",
+      "model_url": "https://huggingface.co/DennisHuang648/VoxCPM2-GGUF",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-04"
@@ -1299,7 +1341,7 @@
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 7318,
+      "downloads": 8447,
       "size_mb": null,
       "languages": [
         "en"
@@ -1309,30 +1351,31 @@
       ],
       "model_url": "https://huggingface.co/unsloth/csm-1b",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-04"
     },
     {
-      "id": "YatharthS/LuxTTS",
-      "name": "LuxTTS",
+      "id": "syvai/plapre-nano",
+      "name": "plapre",
       "source": "huggingface",
-      "license": "apache-2.0",
+      "license": "cc-by-4.0",
       "license_oss": true,
-      "downloads": 6967,
+      "downloads": 7080,
       "size_mb": null,
       "languages": [
-        "en"
+        "da"
       ],
       "eu_languages": [
-        "en"
+        "da"
       ],
-      "model_url": "https://huggingface.co/YatharthS/LuxTTS",
-      "framework": "xtts",
-      "last_checked": "2026-08-24T03:53:44+0000",
+      "model_url": "https://huggingface.co/syvai/plapre-nano",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
-      "samples_generated": false
+      "samples_generated": false,
+      "new_at": "2026-08-04"
     },
     {
       "id": "laion/moss-tts-local-transformer-4.55b-voice-acting-v2",
@@ -1358,12 +1401,73 @@
       "new_at": "2026-08-31"
     },
     {
+      "id": "YatharthS/LuxTTS",
+      "name": "LuxTTS",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 6424,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/YatharthS/LuxTTS",
+      "framework": "xtts",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false
+    },
+    {
+      "id": "onnx-community/Kokoro-82M-v1.0-ONNX-timestamped",
+      "name": "Kokoro",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 6334,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX-timestamped",
+      "framework": "kokoro",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false
+    },
+    {
+      "id": "unsloth/orpheus-3b-0.1-ft-GGUF",
+      "name": "orpheus",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 6179,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/unsloth/orpheus-3b-0.1-ft-GGUF",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-04"
+    },
+    {
       "id": "speechbrain/tts-hifigan-ljspeech",
       "name": "tts",
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 6480,
+      "downloads": 5957,
       "size_mb": null,
       "languages": [
         "en"
@@ -1373,90 +1477,7 @@
       ],
       "model_url": "https://huggingface.co/speechbrain/tts-hifigan-ljspeech",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-04"
-    },
-    {
-      "id": "speechbrain/tts-tacotron2-ljspeech",
-      "name": "tts",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 6384,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/speechbrain/tts-tacotron2-ljspeech",
-      "framework": "tacotron",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false
-    },
-    {
-      "id": "OpenMOSS-Team/MOSS-TTS",
-      "name": "MOSS",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 6361,
-      "size_mb": null,
-      "languages": [
-        "cs",
-        "da",
-        "de",
-        "el",
-        "en",
-        "es",
-        "fr",
-        "hu",
-        "it",
-        "pl",
-        "pt",
-        "sv"
-      ],
-      "eu_languages": [
-        "cs",
-        "da",
-        "de",
-        "el",
-        "en",
-        "es",
-        "fr",
-        "hu",
-        "it",
-        "pl",
-        "pt",
-        "sv"
-      ],
-      "model_url": "https://huggingface.co/OpenMOSS-Team/MOSS-TTS",
-      "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false
-    },
-    {
-      "id": "DennisHuang648/VoxCPM2-GGUF",
-      "name": "VoxCPM2",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 5947,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/DennisHuang648/VoxCPM2-GGUF",
-      "framework": "unknown",
-      "last_checked": "2026-08-17T03:49:47+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-04"
@@ -1505,12 +1526,74 @@
       "new_at": "2026-08-24"
     },
     {
-      "id": "isaiahbjork/orpheus-3b-0.1-ft-Q4_K_M-GGUF",
+      "id": "speechbrain/tts-tacotron2-ljspeech",
+      "name": "tts",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 5790,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/speechbrain/tts-tacotron2-ljspeech",
+      "framework": "tacotron",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false
+    },
+    {
+      "id": "OpenMOSS-Team/MOSS-TTS",
+      "name": "MOSS",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 5316,
+      "size_mb": null,
+      "languages": [
+        "cs",
+        "da",
+        "de",
+        "el",
+        "en",
+        "es",
+        "fr",
+        "hu",
+        "it",
+        "pl",
+        "pt",
+        "sv"
+      ],
+      "eu_languages": [
+        "cs",
+        "da",
+        "de",
+        "el",
+        "en",
+        "es",
+        "fr",
+        "hu",
+        "it",
+        "pl",
+        "pt",
+        "sv"
+      ],
+      "model_url": "https://huggingface.co/OpenMOSS-Team/MOSS-TTS",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false
+    },
+    {
+      "id": "Sunbird/orpheus-3b-tts-multilingual",
       "name": "orpheus",
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 5802,
+      "downloads": 4661,
       "size_mb": null,
       "languages": [
         "en"
@@ -1518,33 +1601,12 @@
       "eu_languages": [
         "en"
       ],
-      "model_url": "https://huggingface.co/isaiahbjork/orpheus-3b-0.1-ft-Q4_K_M-GGUF",
+      "model_url": "https://huggingface.co/Sunbird/orpheus-3b-tts-multilingual",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
-      "new_at": "2026-08-04"
-    },
-    {
-      "id": "nari-labs/Dia2-2B",
-      "name": "Dia2",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 5417,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/nari-labs/Dia2-2B",
-      "framework": "unknown",
-      "last_checked": "2026-08-10T04:29:22+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-04"
+      "new_at": "2026-08-10"
     },
     {
       "id": "unsloth/orpheus-3b-0.1-ft-unsloth-bnb-4bit",
@@ -1552,7 +1614,7 @@
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 4777,
+      "downloads": 4578,
       "size_mb": null,
       "languages": [
         "en"
@@ -1562,7 +1624,7 @@
       ],
       "model_url": "https://huggingface.co/unsloth/orpheus-3b-0.1-ft-unsloth-bnb-4bit",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-04"
@@ -1601,12 +1663,32 @@
       "new_at": "2026-08-04"
     },
     {
+      "id": "prince-canuma/Kokoro-82M",
+      "name": "Kokoro",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 4204,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/prince-canuma/Kokoro-82M",
+      "framework": "kokoro",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false
+    },
+    {
       "id": "FunAudioLLM/CosyVoice2-0.5B",
       "name": "CosyVoice2",
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 4065,
+      "downloads": 4192,
       "size_mb": null,
       "languages": [
         "de",
@@ -1624,50 +1706,10 @@
       ],
       "model_url": "https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-17"
-    },
-    {
-      "id": "prince-canuma/Kokoro-82M",
-      "name": "Kokoro",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 4018,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/prince-canuma/Kokoro-82M",
-      "framework": "kokoro",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false
-    },
-    {
-      "id": "onnx-community/Kokoro-82M-v1.0-ONNX-timestamped",
-      "name": "Kokoro",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 3975,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX-timestamped",
-      "framework": "kokoro",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false
     },
     {
       "id": "cstr/chatterbox-GGUF",
@@ -1741,27 +1783,6 @@
       "samples_generated": false
     },
     {
-      "id": "saheedniyi/YarnGPT2",
-      "name": "YarnGPT2",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 3588,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/saheedniyi/YarnGPT2",
-      "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-04"
-    },
-    {
       "id": "ResembleAI/chatterbox-turbo-ONNX",
       "name": "chatterbox",
       "source": "huggingface",
@@ -1814,68 +1835,6 @@
       "new_at": "2026-08-24"
     },
     {
-      "id": "audo/orpheus-3b-0.1-ft",
-      "name": "orpheus",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 3472,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/audo/orpheus-3b-0.1-ft",
-      "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-10"
-    },
-    {
-      "id": "maya-research/Veena",
-      "name": "Veena",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 3463,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/maya-research/Veena",
-      "framework": "unknown",
-      "last_checked": "2026-08-17T03:49:47+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-04"
-    },
-    {
-      "id": "parler-tts/parler_tts_mini_v0.1",
-      "name": "parler_tts_mini_v0.1",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 3136,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/parler-tts/parler_tts_mini_v0.1",
-      "framework": "parlertts",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false
-    },
-    {
       "id": "cstr/qwen3-tts-1.7b-voicedesign-GGUF",
       "name": "qwen3",
       "source": "huggingface",
@@ -1902,6 +1861,69 @@
       "model_url": "https://huggingface.co/cstr/qwen3-tts-1.7b-voicedesign-GGUF",
       "framework": "unknown",
       "last_checked": "2026-08-24T03:53:44+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-04"
+    },
+    {
+      "id": "saheedniyi/YarnGPT2",
+      "name": "YarnGPT2",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 3020,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/saheedniyi/YarnGPT2",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-04"
+    },
+    {
+      "id": "nari-labs/Dia2-2B",
+      "name": "Dia2",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 2816,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/nari-labs/Dia2-2B",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-04"
+    },
+    {
+      "id": "unsloth/orpheus-3b-0.1-pretrained",
+      "name": "orpheus",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 2804,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/unsloth/orpheus-3b-0.1-pretrained",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-04"
@@ -1936,6 +1958,83 @@
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-24"
+    },
+    {
+      "id": "kugelaudio/kugelaudio-0-open",
+      "name": "kugelaudio",
+      "source": "huggingface",
+      "license": "mit",
+      "license_oss": true,
+      "downloads": 2786,
+      "size_mb": null,
+      "languages": [
+        "bg",
+        "cs",
+        "da",
+        "de",
+        "el",
+        "en",
+        "es",
+        "fi",
+        "fr",
+        "hr",
+        "hu",
+        "it",
+        "nl",
+        "no",
+        "pl",
+        "pt",
+        "ro",
+        "sk",
+        "sv"
+      ],
+      "eu_languages": [
+        "bg",
+        "cs",
+        "da",
+        "de",
+        "el",
+        "en",
+        "es",
+        "fi",
+        "fr",
+        "hr",
+        "hu",
+        "it",
+        "nl",
+        "no",
+        "pl",
+        "pt",
+        "ro",
+        "sk",
+        "sv"
+      ],
+      "model_url": "https://huggingface.co/kugelaudio/kugelaudio-0-open",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-04"
+    },
+    {
+      "id": "parler-tts/parler_tts_mini_v0.1",
+      "name": "parler_tts_mini_v0.1",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 2714,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/parler-tts/parler_tts_mini_v0.1",
+      "framework": "parlertts",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false
     },
     {
       "id": "aoi-ot/VibeVoice-Large",
@@ -2048,48 +2147,6 @@
       "new_at": "2026-08-10"
     },
     {
-      "id": "unsloth/orpheus-3b-0.1-pretrained",
-      "name": "orpheus",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 2550,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/unsloth/orpheus-3b-0.1-pretrained",
-      "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-04"
-    },
-    {
-      "id": "nari-labs/Dia2-1B",
-      "name": "Dia2",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 2340,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/nari-labs/Dia2-1B",
-      "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-31"
-    },
-    {
       "id": "cstr/voxcpm2-GGUF",
       "name": "voxcpm2",
       "source": "huggingface",
@@ -2176,61 +2233,25 @@
       "new_at": "2026-08-17"
     },
     {
-      "id": "kugelaudio/kugelaudio-0-open",
-      "name": "kugelaudio",
+      "id": "nari-labs/Dia2-1B",
+      "name": "Dia2",
       "source": "huggingface",
-      "license": "mit",
+      "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 2226,
+      "downloads": 2219,
       "size_mb": null,
       "languages": [
-        "bg",
-        "cs",
-        "da",
-        "de",
-        "el",
-        "en",
-        "es",
-        "fi",
-        "fr",
-        "hr",
-        "hu",
-        "it",
-        "nl",
-        "no",
-        "pl",
-        "pt",
-        "ro",
-        "sk",
-        "sv"
+        "en"
       ],
       "eu_languages": [
-        "bg",
-        "cs",
-        "da",
-        "de",
-        "el",
-        "en",
-        "es",
-        "fi",
-        "fr",
-        "hr",
-        "hu",
-        "it",
-        "nl",
-        "no",
-        "pl",
-        "pt",
-        "ro",
-        "sk",
-        "sv"
+        "en"
       ],
-      "model_url": "https://huggingface.co/kugelaudio/kugelaudio-0-open",
+      "model_url": "https://huggingface.co/nari-labs/Dia2-1B",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
-      "new_at": "2026-08-04"
+      "new_at": "2026-08-31"
     },
     {
       "id": "cstr/vibevoice-1.5b-GGUF",
@@ -2254,43 +2275,22 @@
       "new_at": "2026-08-10"
     },
     {
-      "id": "firstpixel/F5-TTS-pt-br",
-      "name": "F5",
+      "id": "canopylabs/orpheus-3b-0.1-pretrained",
+      "name": "orpheus",
       "source": "huggingface",
-      "license": "cc-by-nc-4.0",
+      "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 2168,
+      "downloads": 2079,
       "size_mb": null,
       "languages": [
-        "pt"
+        "en"
       ],
       "eu_languages": [
-        "pt"
+        "en"
       ],
-      "model_url": "https://huggingface.co/firstpixel/F5-TTS-pt-br",
+      "model_url": "https://huggingface.co/canopylabs/orpheus-3b-0.1-pretrained",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-04"
-    },
-    {
-      "id": "alien79/F5-TTS-italian",
-      "name": "F5",
-      "source": "huggingface",
-      "license": "cc-by-4.0",
-      "license_oss": true,
-      "downloads": 2147,
-      "size_mb": null,
-      "languages": [
-        "it"
-      ],
-      "eu_languages": [
-        "it"
-      ],
-      "model_url": "https://huggingface.co/alien79/F5-TTS-italian",
-      "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-04"
@@ -2317,22 +2317,22 @@
       "new_at": "2026-08-04"
     },
     {
-      "id": "canopylabs/orpheus-3b-0.1-pretrained",
-      "name": "orpheus",
+      "id": "firstpixel/F5-TTS-pt-br",
+      "name": "F5",
       "source": "huggingface",
-      "license": "apache-2.0",
+      "license": "cc-by-nc-4.0",
       "license_oss": true,
-      "downloads": 2027,
+      "downloads": 2050,
       "size_mb": null,
       "languages": [
-        "en"
+        "pt"
       ],
       "eu_languages": [
-        "en"
+        "pt"
       ],
-      "model_url": "https://huggingface.co/canopylabs/orpheus-3b-0.1-pretrained",
+      "model_url": "https://huggingface.co/firstpixel/F5-TTS-pt-br",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-04"
@@ -2367,6 +2367,26 @@
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-04"
+    },
+    {
+      "id": "parler-tts/parler-tts-mini-v1.1",
+      "name": "parler",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 1774,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/parler-tts/parler-tts-mini-v1.1",
+      "framework": "parlertts",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false
     },
     {
       "id": "FluidInference/kokoro-82m-coreml",
@@ -2410,24 +2430,37 @@
       "new_at": "2026-08-24"
     },
     {
-      "id": "parler-tts/parler-tts-mini-v1.1",
-      "name": "parler",
+      "id": "Audio8/audio8-TTS-0.1B-ONNX-INT8",
+      "name": "audio8",
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 1679,
+      "downloads": 1657,
       "size_mb": null,
       "languages": [
-        "en"
+        "de",
+        "en",
+        "es",
+        "fr",
+        "it",
+        "nl",
+        "pl"
       ],
       "eu_languages": [
-        "en"
+        "de",
+        "en",
+        "es",
+        "fr",
+        "it",
+        "nl",
+        "pl"
       ],
-      "model_url": "https://huggingface.co/parler-tts/parler-tts-mini-v1.1",
-      "framework": "parlertts",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "model_url": "https://huggingface.co/Audio8/audio8-TTS-0.1B-ONNX-INT8",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
-      "samples_generated": false
+      "samples_generated": false,
+      "new_at": "2026-08-31"
     },
     {
       "id": "cstr/indextts-1.5-GGUF",
@@ -2448,27 +2481,6 @@
       "last_checked": "2026-08-04T22:39:42+0000",
       "status": "active",
       "samples_generated": false
-    },
-    {
-      "id": "HKUSTAudio/Llasa-1B",
-      "name": "Llasa",
-      "source": "huggingface",
-      "license": "cc-by-nc-4.0",
-      "license_oss": true,
-      "downloads": 1596,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/HKUSTAudio/Llasa-1B",
-      "framework": "unknown",
-      "last_checked": "2026-08-17T03:49:47+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-04"
     },
     {
       "id": "mlx-community/chatterbox-multilingual-v3",
@@ -2516,6 +2528,27 @@
       "new_at": "2026-08-31"
     },
     {
+      "id": "alien79/F5-TTS-italian",
+      "name": "F5",
+      "source": "huggingface",
+      "license": "cc-by-4.0",
+      "license_oss": true,
+      "downloads": 1568,
+      "size_mb": null,
+      "languages": [
+        "it"
+      ],
+      "eu_languages": [
+        "it"
+      ],
+      "model_url": "https://huggingface.co/alien79/F5-TTS-italian",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-04"
+    },
+    {
       "id": "theoracleguy/Kokoro-82M-bf16",
       "name": "Kokoro",
       "source": "huggingface",
@@ -2536,62 +2569,12 @@
       "samples_generated": false
     },
     {
-      "id": "Sunbird/orpheus-3b-tts-multilingual",
-      "name": "orpheus",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 1470,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/Sunbird/orpheus-3b-tts-multilingual",
-      "framework": "unknown",
-      "last_checked": "2026-08-10T04:29:22+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-10"
-    },
-    {
-      "id": "ModelsLab/omnivoice-singing",
-      "name": "omnivoice",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 1411,
-      "size_mb": null,
-      "languages": [
-        "de",
-        "en",
-        "es",
-        "fr",
-        "it"
-      ],
-      "eu_languages": [
-        "de",
-        "en",
-        "es",
-        "fr",
-        "it"
-      ],
-      "model_url": "https://huggingface.co/ModelsLab/omnivoice-singing",
-      "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-24"
-    },
-    {
       "id": "Audio8/Audio8-TTS-Preview-0.6B-ONNX-INT4",
       "name": "Audio8",
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 1307,
+      "downloads": 1467,
       "size_mb": null,
       "languages": [
         "de",
@@ -2613,10 +2596,39 @@
       ],
       "model_url": "https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6B-ONNX-INT4",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-17"
+    },
+    {
+      "id": "ModelsLab/omnivoice-singing",
+      "name": "omnivoice",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 1391,
+      "size_mb": null,
+      "languages": [
+        "de",
+        "en",
+        "es",
+        "fr",
+        "it"
+      ],
+      "eu_languages": [
+        "de",
+        "en",
+        "es",
+        "fr",
+        "it"
+      ],
+      "model_url": "https://huggingface.co/ModelsLab/omnivoice-singing",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-24"
     },
     {
       "id": "Soul-AILab/SoulX-Singer",
@@ -2624,7 +2636,7 @@
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 1294,
+      "downloads": 1365,
       "size_mb": null,
       "languages": [
         "en"
@@ -2634,7 +2646,7 @@
       ],
       "model_url": "https://huggingface.co/Soul-AILab/SoulX-Singer",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-04"
@@ -2733,6 +2745,27 @@
       "new_at": "2026-08-31"
     },
     {
+      "id": "lex-au/Orpheus-3b-FT-Q8_0.gguf",
+      "name": "Orpheus",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 1207,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/lex-au/Orpheus-3b-FT-Q8_0.gguf",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-04"
+    },
+    {
       "id": "BricksDisplay/Chatterbox-Multilingual-TTS-GGUF",
       "name": "Chatterbox",
       "source": "huggingface",
@@ -2799,12 +2832,12 @@
       "new_at": "2026-08-04"
     },
     {
-      "id": "owensong/Inflect-Micro-v2",
-      "name": "Inflect",
+      "id": "OuteAI/OuteTTS-0.2-500M-GGUF",
+      "name": "OuteTTS",
       "source": "huggingface",
-      "license": "apache-2.0",
+      "license": "cc-by-nc-4.0",
       "license_oss": true,
-      "downloads": 1156,
+      "downloads": 1144,
       "size_mb": null,
       "languages": [
         "en"
@@ -2812,9 +2845,9 @@
       "eu_languages": [
         "en"
       ],
-      "model_url": "https://huggingface.co/owensong/Inflect-Micro-v2",
-      "framework": "vits",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "model_url": "https://huggingface.co/OuteAI/OuteTTS-0.2-500M-GGUF",
+      "framework": "parlertts",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false
     },
@@ -2897,22 +2930,22 @@
       "new_at": "2026-08-31"
     },
     {
-      "id": "eustlb/csm-1b",
-      "name": "csm",
+      "id": "alien79/f5-ita-test",
+      "name": "f5",
       "source": "huggingface",
-      "license": "apache-2.0",
+      "license": "cc-by-4.0",
       "license_oss": true,
-      "downloads": 1085,
+      "downloads": 1118,
       "size_mb": null,
       "languages": [
-        "en"
+        "it"
       ],
       "eu_languages": [
-        "en"
+        "it"
       ],
-      "model_url": "https://huggingface.co/eustlb/csm-1b",
+      "model_url": "https://huggingface.co/alien79/f5-ita-test",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-04"
@@ -2962,24 +2995,39 @@
       "new_at": "2026-08-04"
     },
     {
-      "id": "OuteAI/OuteTTS-0.2-500M-GGUF",
-      "name": "OuteTTS",
+      "id": "HKUSTAudio/Llasa-1B-Multilingual",
+      "name": "Llasa",
       "source": "huggingface",
       "license": "cc-by-nc-4.0",
       "license_oss": true,
-      "downloads": 1030,
+      "downloads": 1003,
       "size_mb": null,
       "languages": [
-        "en"
+        "de",
+        "en",
+        "es",
+        "fr",
+        "it",
+        "nl",
+        "pl",
+        "pt"
       ],
       "eu_languages": [
-        "en"
+        "de",
+        "en",
+        "es",
+        "fr",
+        "it",
+        "nl",
+        "pl",
+        "pt"
       ],
-      "model_url": "https://huggingface.co/OuteAI/OuteTTS-0.2-500M-GGUF",
-      "framework": "parlertts",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "model_url": "https://huggingface.co/HKUSTAudio/Llasa-1B-Multilingual",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
-      "samples_generated": false
+      "samples_generated": false,
+      "new_at": "2026-08-04"
     },
     {
       "id": "kyutai/tts-0.75b-en-public",
@@ -3003,33 +3051,12 @@
       "new_at": "2026-08-10"
     },
     {
-      "id": "alien79/f5-ita-test",
-      "name": "f5",
-      "source": "huggingface",
-      "license": "cc-by-4.0",
-      "license_oss": true,
-      "downloads": 943,
-      "size_mb": null,
-      "languages": [
-        "it"
-      ],
-      "eu_languages": [
-        "it"
-      ],
-      "model_url": "https://huggingface.co/alien79/f5-ita-test",
-      "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-04"
-    },
-    {
       "id": "mistralai/Voxtral-4B-TTS-2603",
       "name": "Voxtral",
       "source": "huggingface",
       "license": "cc-by-nc-4.0",
       "license_oss": true,
-      "downloads": 930,
+      "downloads": 976,
       "size_mb": null,
       "languages": [
         "de",
@@ -3051,7 +3078,28 @@
       ],
       "model_url": "https://huggingface.co/mistralai/Voxtral-4B-TTS-2603",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-04"
+    },
+    {
+      "id": "eustlb/csm-1b",
+      "name": "csm",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 955,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/eustlb/csm-1b",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-04"
@@ -3108,74 +3156,6 @@
       "new_at": "2026-08-17"
     },
     {
-      "id": "HKUSTAudio/Llasa-1B-Multilingual",
-      "name": "Llasa",
-      "source": "huggingface",
-      "license": "cc-by-nc-4.0",
-      "license_oss": true,
-      "downloads": 867,
-      "size_mb": null,
-      "languages": [
-        "de",
-        "en",
-        "es",
-        "fr",
-        "it",
-        "nl",
-        "pl",
-        "pt"
-      ],
-      "eu_languages": [
-        "de",
-        "en",
-        "es",
-        "fr",
-        "it",
-        "nl",
-        "pl",
-        "pt"
-      ],
-      "model_url": "https://huggingface.co/HKUSTAudio/Llasa-1B-Multilingual",
-      "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-04"
-    },
-    {
-      "id": "cstr/voxtral-4b-tts-GGUF",
-      "name": "voxtral",
-      "source": "huggingface",
-      "license": "cc-by-nc-4.0",
-      "license_oss": true,
-      "downloads": 860,
-      "size_mb": null,
-      "languages": [
-        "de",
-        "en",
-        "es",
-        "fr",
-        "it",
-        "nl",
-        "pt"
-      ],
-      "eu_languages": [
-        "de",
-        "en",
-        "es",
-        "fr",
-        "it",
-        "nl",
-        "pt"
-      ],
-      "model_url": "https://huggingface.co/cstr/voxtral-4b-tts-GGUF",
-      "framework": "unknown",
-      "last_checked": "2026-08-17T03:49:47+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-04"
-    },
-    {
       "id": "mweinbach/Kokoro-82M-Swift",
       "name": "Kokoro",
       "source": "huggingface",
@@ -3194,59 +3174,6 @@
       "last_checked": "2026-08-04T22:39:42+0000",
       "status": "active",
       "samples_generated": false
-    },
-    {
-      "id": "ylacombe/bark-small",
-      "name": "bark",
-      "source": "huggingface",
-      "license": "cc-by-nc-4.0",
-      "license_oss": true,
-      "downloads": 847,
-      "size_mb": null,
-      "languages": [
-        "de",
-        "en",
-        "es",
-        "fr",
-        "it",
-        "pl",
-        "pt"
-      ],
-      "eu_languages": [
-        "de",
-        "en",
-        "es",
-        "fr",
-        "it",
-        "pl",
-        "pt"
-      ],
-      "model_url": "https://huggingface.co/ylacombe/bark-small",
-      "framework": "bark",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false
-    },
-    {
-      "id": "lex-au/Orpheus-3b-FT-Q8_0.gguf",
-      "name": "Orpheus",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 847,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/lex-au/Orpheus-3b-FT-Q8_0.gguf",
-      "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-04"
     },
     {
       "id": "simonfxr/kokoro.cpp-GGUF",
@@ -3282,7 +3209,7 @@
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 816,
+      "downloads": 785,
       "size_mb": null,
       "languages": [
         "de",
@@ -3308,31 +3235,43 @@
       ],
       "model_url": "https://huggingface.co/OuteAI/OuteTTS-1.0-0.6B-GGUF",
       "framework": "unknown",
-      "last_checked": "2026-08-24T03:53:44+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-10"
     },
     {
-      "id": "speechbrain/tts-hifigan-libritts-16kHz",
-      "name": "tts",
+      "id": "cstr/voxtral-4b-tts-GGUF",
+      "name": "voxtral",
       "source": "huggingface",
-      "license": "apache-2.0",
+      "license": "cc-by-nc-4.0",
       "license_oss": true,
-      "downloads": 782,
+      "downloads": 781,
       "size_mb": null,
       "languages": [
-        "en"
+        "de",
+        "en",
+        "es",
+        "fr",
+        "it",
+        "nl",
+        "pt"
       ],
       "eu_languages": [
-        "en"
+        "de",
+        "en",
+        "es",
+        "fr",
+        "it",
+        "nl",
+        "pt"
       ],
-      "model_url": "https://huggingface.co/speechbrain/tts-hifigan-libritts-16kHz",
+      "model_url": "https://huggingface.co/cstr/voxtral-4b-tts-GGUF",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
-      "new_at": "2026-08-24"
+      "new_at": "2026-08-04"
     },
     {
       "id": "cstr/bark-small-GGUF",
@@ -3367,6 +3306,47 @@
       "samples_generated": false
     },
     {
+      "id": "mlx-community/Kokoro-82M-4bit",
+      "name": "Kokoro",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 771,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/mlx-community/Kokoro-82M-4bit",
+      "framework": "kokoro",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false
+    },
+    {
+      "id": "BricksDisplay/MOSS-TTS-Realtime-GGUF",
+      "name": "MOSS",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 769,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/BricksDisplay/MOSS-TTS-Realtime-GGUF",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-04"
+    },
+    {
       "id": "canopylabs/3b-fr-ft-research_release",
       "name": "3b",
       "source": "huggingface",
@@ -3386,6 +3366,48 @@
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-04"
+    },
+    {
+      "id": "mohammed-bahumaish/vibevoice-realtime-0.5b-with-encoder",
+      "name": "vibevoice",
+      "source": "huggingface",
+      "license": "mit",
+      "license_oss": true,
+      "downloads": 762,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/mohammed-bahumaish/vibevoice-realtime-0.5b-with-encoder",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-09-07"
+    },
+    {
+      "id": "speechbrain/tts-hifigan-libritts-16kHz",
+      "name": "tts",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 758,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/speechbrain/tts-hifigan-libritts-16kHz",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-24"
     },
     {
       "id": "ARTPARK-IISc/DhVaani-0.5",
@@ -3409,24 +3431,41 @@
       "new_at": "2026-08-24"
     },
     {
-      "id": "mlx-community/Kokoro-82M-4bit",
-      "name": "Kokoro",
+      "id": "OuteAI/OuteTTS-1.0-0.6B",
+      "name": "OuteTTS",
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 733,
+      "downloads": 744,
       "size_mb": null,
       "languages": [
-        "en"
+        "de",
+        "en",
+        "es",
+        "fr",
+        "hu",
+        "it",
+        "lv",
+        "nl",
+        "pl"
       ],
       "eu_languages": [
-        "en"
+        "de",
+        "en",
+        "es",
+        "fr",
+        "hu",
+        "it",
+        "lv",
+        "nl",
+        "pl"
       ],
-      "model_url": "https://huggingface.co/mlx-community/Kokoro-82M-4bit",
-      "framework": "kokoro",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "model_url": "https://huggingface.co/OuteAI/OuteTTS-1.0-0.6B",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
-      "samples_generated": false
+      "samples_generated": false,
+      "new_at": "2026-09-07"
     },
     {
       "id": "FunAudioLLM/CosyVoice-300M",
@@ -3478,6 +3517,27 @@
       "samples_generated": false
     },
     {
+      "id": "11mlabs/indri-0.1-124m-tts",
+      "name": "indri",
+      "source": "huggingface",
+      "license": "cc-by-sa-4.0",
+      "license_oss": true,
+      "downloads": 713,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/11mlabs/indri-0.1-124m-tts",
+      "framework": "parlertts",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-31"
+    },
+    {
       "id": "onnx-community/Kokoro-82M-v1.1-zh-ONNX",
       "name": "Kokoro",
       "source": "huggingface",
@@ -3496,6 +3556,48 @@
       "last_checked": "2026-08-04T22:56:00+0000",
       "status": "active",
       "samples_generated": false
+    },
+    {
+      "id": "KRAFTON/Raon-OpenTTS-1B",
+      "name": "Raon",
+      "source": "huggingface",
+      "license": "cc-by-nc-4.0",
+      "license_oss": true,
+      "downloads": 688,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/KRAFTON/Raon-OpenTTS-1B",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-31"
+    },
+    {
+      "id": "ggml-org/sesame-csm-1b-GGUF",
+      "name": "sesame",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 675,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/ggml-org/sesame-csm-1b-GGUF",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-09-07"
     },
     {
       "id": "inoryQwQ/kokoro.best",
@@ -3537,27 +3639,6 @@
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-04"
-    },
-    {
-      "id": "KRAFTON/Raon-OpenTTS-1B",
-      "name": "Raon",
-      "source": "huggingface",
-      "license": "cc-by-nc-4.0",
-      "license_oss": true,
-      "downloads": 657,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/KRAFTON/Raon-OpenTTS-1B",
-      "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-31"
     },
     {
       "id": "onnx-community/chatterbox-multilingual-ONNX",
@@ -3649,60 +3730,6 @@
       "new_at": "2026-08-04"
     },
     {
-      "id": "BricksDisplay/MOSS-TTS-Realtime-GGUF",
-      "name": "MOSS",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 642,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/BricksDisplay/MOSS-TTS-Realtime-GGUF",
-      "framework": "unknown",
-      "last_checked": "2026-08-04T22:56:00+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-04"
-    },
-    {
-      "id": "Audio8/audio8-TTS-0.1B-ONNX-INT8",
-      "name": "audio8",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 638,
-      "size_mb": null,
-      "languages": [
-        "de",
-        "en",
-        "es",
-        "fr",
-        "it",
-        "nl",
-        "pl"
-      ],
-      "eu_languages": [
-        "de",
-        "en",
-        "es",
-        "fr",
-        "it",
-        "nl",
-        "pl"
-      ],
-      "model_url": "https://huggingface.co/Audio8/audio8-TTS-0.1B-ONNX-INT8",
-      "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-31"
-    },
-    {
       "id": "onnx-community/chatterbox-ONNX",
       "name": "chatterbox",
       "source": "huggingface",
@@ -3724,25 +3751,31 @@
       "new_at": "2026-08-04"
     },
     {
-      "id": "11mlabs/indri-0.1-124m-tts",
-      "name": "indri",
+      "id": "samuel-vitorino/sopro-v2-turbo",
+      "name": "sopro",
       "source": "huggingface",
-      "license": "cc-by-sa-4.0",
+      "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 626,
+      "downloads": 619,
       "size_mb": null,
       "languages": [
-        "en"
+        "de",
+        "en",
+        "fr",
+        "pt"
       ],
       "eu_languages": [
-        "en"
+        "de",
+        "en",
+        "fr",
+        "pt"
       ],
-      "model_url": "https://huggingface.co/11mlabs/indri-0.1-124m-tts",
-      "framework": "parlertts",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "model_url": "https://huggingface.co/samuel-vitorino/sopro-v2-turbo",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
-      "new_at": "2026-08-31"
+      "new_at": "2026-09-07"
     },
     {
       "id": "Thorsten-Voice/Kokoro",
@@ -3765,12 +3798,44 @@
       "samples_generated": false
     },
     {
+      "id": "ylacombe/bark-small",
+      "name": "bark",
+      "source": "huggingface",
+      "license": "cc-by-nc-4.0",
+      "license_oss": true,
+      "downloads": 613,
+      "size_mb": null,
+      "languages": [
+        "de",
+        "en",
+        "es",
+        "fr",
+        "it",
+        "pl",
+        "pt"
+      ],
+      "eu_languages": [
+        "de",
+        "en",
+        "es",
+        "fr",
+        "it",
+        "pl",
+        "pt"
+      ],
+      "model_url": "https://huggingface.co/ylacombe/bark-small",
+      "framework": "bark",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false
+    },
+    {
       "id": "netease-youdao/Confucius4-TTS",
       "name": "Confucius4",
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 575,
+      "downloads": 604,
       "size_mb": null,
       "languages": [
         "de",
@@ -3790,10 +3855,52 @@
       ],
       "model_url": "https://huggingface.co/netease-youdao/Confucius4-TTS",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-31"
+    },
+    {
+      "id": "audo/orpheus-3b-0.1-ft",
+      "name": "orpheus",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 603,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/audo/orpheus-3b-0.1-ft",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-10"
+    },
+    {
+      "id": "HKUSTAudio/Llasa-3B",
+      "name": "Llasa",
+      "source": "huggingface",
+      "license": "cc-by-nc-4.0",
+      "license_oss": true,
+      "downloads": 585,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/HKUSTAudio/Llasa-3B",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-04"
     },
     {
       "id": "cstr/bananamind-tts-GGUF",
@@ -3818,12 +3925,12 @@
       "samples_generated": false
     },
     {
-      "id": "HKUSTAudio/Llasa-3B",
-      "name": "Llasa",
+      "id": "ByteDance/MegaTTS3",
+      "name": "MegaTTS3",
       "source": "huggingface",
-      "license": "cc-by-nc-4.0",
+      "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 571,
+      "downloads": 554,
       "size_mb": null,
       "languages": [
         "en"
@@ -3831,12 +3938,12 @@
       "eu_languages": [
         "en"
       ],
-      "model_url": "https://huggingface.co/HKUSTAudio/Llasa-3B",
+      "model_url": "https://huggingface.co/ByteDance/MegaTTS3",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
-      "new_at": "2026-08-04"
+      "new_at": "2026-08-31"
     },
     {
       "id": "mlx-community/Kokoro-82M-8bit",
@@ -3844,7 +3951,7 @@
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
-      "downloads": 543,
+      "downloads": 549,
       "size_mb": null,
       "languages": [
         "en"
@@ -3854,7 +3961,27 @@
       ],
       "model_url": "https://huggingface.co/mlx-community/Kokoro-82M-8bit",
       "framework": "kokoro",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false
+    },
+    {
+      "id": "ai4bharat/indic-parler-tts-pretrained",
+      "name": "indic",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 542,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/ai4bharat/indic-parler-tts-pretrained",
+      "framework": "parlertts",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false
     },
@@ -3880,29 +4007,8 @@
       "new_at": "2026-08-04"
     },
     {
-      "id": "lex-au/Orpheus-3b-German-FT-Q8_0.gguf",
-      "name": "Orpheus",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 520,
-      "size_mb": null,
-      "languages": [
-        "de"
-      ],
-      "eu_languages": [
-        "de"
-      ],
-      "model_url": "https://huggingface.co/lex-au/Orpheus-3b-German-FT-Q8_0.gguf",
-      "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false,
-      "new_at": "2026-08-04"
-    },
-    {
-      "id": "ByteDance/MegaTTS3",
-      "name": "MegaTTS3",
+      "id": "owensong/Inflect-Micro-v2",
+      "name": "Inflect",
       "source": "huggingface",
       "license": "apache-2.0",
       "license_oss": true,
@@ -3914,12 +4020,88 @@
       "eu_languages": [
         "en"
       ],
-      "model_url": "https://huggingface.co/ByteDance/MegaTTS3",
+      "model_url": "https://huggingface.co/owensong/Inflect-Micro-v2",
+      "framework": "vits",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false
+    },
+    {
+      "id": "HKUSTAudio/Llasa-1B",
+      "name": "Llasa",
+      "source": "huggingface",
+      "license": "cc-by-nc-4.0",
+      "license_oss": true,
+      "downloads": 517,
+      "size_mb": null,
+      "languages": [
+        "en"
+      ],
+      "eu_languages": [
+        "en"
+      ],
+      "model_url": "https://huggingface.co/HKUSTAudio/Llasa-1B",
       "framework": "unknown",
-      "last_checked": "2026-08-31T09:21:13+0000",
+      "last_checked": "2026-09-07T07:57:28+0000",
       "status": "active",
       "samples_generated": false,
-      "new_at": "2026-08-31"
+      "new_at": "2026-08-04"
+    },
+    {
+      "id": "parler-tts/parler-tts-mini-multilingual",
+      "name": "parler",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 514,
+      "size_mb": null,
+      "languages": [
+        "de",
+        "en",
+        "es",
+        "fr",
+        "it",
+        "nl",
+        "pl",
+        "pt"
+      ],
+      "eu_languages": [
+        "de",
+        "en",
+        "es",
+        "fr",
+        "it",
+        "nl",
+        "pl",
+        "pt"
+      ],
+      "model_url": "https://huggingface.co/parler-tts/parler-tts-mini-multilingual",
+      "framework": "parlertts",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-09-07"
+    },
+    {
+      "id": "lex-au/Orpheus-3b-German-FT-Q8_0.gguf",
+      "name": "Orpheus",
+      "source": "huggingface",
+      "license": "apache-2.0",
+      "license_oss": true,
+      "downloads": 510,
+      "size_mb": null,
+      "languages": [
+        "de"
+      ],
+      "eu_languages": [
+        "de"
+      ],
+      "model_url": "https://huggingface.co/lex-au/Orpheus-3b-German-FT-Q8_0.gguf",
+      "framework": "unknown",
+      "last_checked": "2026-09-07T07:57:28+0000",
+      "status": "active",
+      "samples_generated": false,
+      "new_at": "2026-08-04"
     },
     {
       "id": "cstr/piper-en_US-lessac-medium-GGUF",
@@ -3962,26 +4144,6 @@
       "status": "active",
       "samples_generated": false,
       "new_at": "2026-08-24"
-    },
-    {
-      "id": "ai4bharat/indic-parler-tts-pretrained",
-      "name": "indic",
-      "source": "huggingface",
-      "license": "apache-2.0",
-      "license_oss": true,
-      "downloads": 509,
-      "size_mb": null,
-      "languages": [
-        "en"
-      ],
-      "eu_languages": [
-        "en"
-      ],
-      "model_url": "https://huggingface.co/ai4bharat/indic-parler-tts-pretrained",
-      "framework": "parlertts",
-      "last_checked": "2026-08-31T09:21:13+0000",
-      "status": "active",
-      "samples_generated": false
     },
     {
       "id": "mohammedaly22/VoiceTut-TTS",
